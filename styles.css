@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+    height: 100%;
+}
+
+.sidebar {
+    height: 100%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+}
+
+.sideHeader {
+    height: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+}
+
+.sideHeader > img {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.sideNavSection {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideMainNav, .sideMiscNav {
+    margin-top: 30px;
+}
+
+.sideMainNav li, .sideMiscNav li {
+    text-align: left;
+    margin: 30px 0 0 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li > img {
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-right: 15px;
+}
+
+.homepage {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.navHeader {
+    grid-row: 1 / 2;
+    max-height: 250px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1.62fr 3fr;
+}
+
+.searchSection {
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.searchSection img {
+    height: 25px;
+    width: 25px;
+    margin: 0 10px 0 10px;
+}
+
+.searchbar {
+    height: 30px;
+    min-width: 50px;
+    background-color: gray;
+    flex-grow: 1;
+    margin-right: 35px;
+}
+
+.profilePane {
+    grid-column: 2 / 3;
+}
+
+.profilePane {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.profilePane, .profilePane > div {
+    align-items: center;
+    justify-content: center;
+}
+
+.notifications {
+    grid-column: 2 / 3;
+    min-width: 40px;
+}
+
+.notifications img {
+    height: 25px;
+    width: 25px;
+}
+
+.profilePortal {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePic {
+    grid-column: 1 / 2;
+    justify-content: center;
+}
+
+.profilePic img {
+    height: 40px;
+    width: 40px;
+}
+
+.profilePortal p {
+    grid-column: 2 / 3;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.welcomePane {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomePic {
+    grid-column: 1 / 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomePic img{
+    height: 50px;
+    width: 50px;
+}
+
+.welcomeText {
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+
+.actionPane {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.actionPane button {
+    width: 100px;
+    height: 40px;
+}
+
+.contentSection {
+    grid-row: 2 / 3;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projectsPane {
+    background-color: teal;
+    grid-column: 1 / 2;
+    display: grid;
+    
+}

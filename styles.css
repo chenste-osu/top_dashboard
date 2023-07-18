@@ -192,5 +192,25 @@ li > img {
     background-color: teal;
     grid-column: 1 / 2;
     display: grid;
-    
+    border: solid 1px black;
+}
+
+.projectsPane h2, .quickPane h2{
+    text-align: left;
+}
+
+.quickPane {
+    background-color: pink;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcePane {
+    background-color: red;
+    grid-row: 1 / 2;
+}
+
+.trendingPane {
+    background-color: blue;
+    grid-row: 2 / 3;
 }

@@ -260,6 +260,7 @@ li > img {
 
 .projectCard p {
     text-align: left;
+    color: rgb(60, 60, 60);
 }
 
 .title {
@@ -357,7 +358,17 @@ li > img {
 
 .trend {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.trendImg {
+    justify-self: end;
+    margin-right: 20%;
+}
+
+.trend img{
+    height: 40px;
+    width: 40px;
 }
 
 .namedisplay {
@@ -365,9 +376,11 @@ li > img {
     flex-direction: column;
 }
 
-.trend img{
-    height: 40px;
-    width: 40px;
-    float: right;
+.namedisplay .username {
+    font-weight: bold;
+}
+
+.namedisplay .nickname {
+    color: rgb(60, 60, 60);
 }
 
